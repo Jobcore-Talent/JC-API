@@ -1,39 +1,51 @@
-{% extends "base.html" %}
-{% block content %}
-  <!-- HEADING -->
-  <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tbody>
-        <tr>
-          <td height="35"></td>
-        </tr>
-        <tr>
-          <td>
-            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tbody>
-                <tr>
-                  <td valign="top" align="center" class="specbundle">
-                    <div class="contentEditableContainer contentTextEditable">
-                      <div class="contentEditable">
-                        <p style='text-align:center;margin:0;font-family:Georgia,Time,sans-serif;font-size:26px;color:#222222;'>
-                          <span class="specbundle2">
-                            <span class="font1">Welcome to</span>
-                          </span>
-                          <span style="color:#289CDC;" class="font"> {{ COMPANY_NAME }}!</span>
-                        </p>
-                      </div>
+{% extends "base.html" %} {% block content %}
+<!-- HEADING -->
+<div
+  class="movableContent"
+  style="border: 0px; padding-top: 0px; position: relative"
+>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+      <tr>
+        <td style="height: 1.5rem"></td>
+      </tr>
+      <tr>
+        <td>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td valign="top" align="center" class="specbundle">
+                  <div class="contentEditableContainer contentTextEditable">
+                    <div class="contentEditable">
+                      <p
+                        style="
+                          text-align: center;
+                          margin: 0px;
+                          font-size: 2.5rem;
+                          color: #222222;
+                        "
+                      >
+                        <span class="specbundle2">
+                          <span class="font1">Welcome to </span>
+                        </span>
+                        <span style="color: #289cdc">
+                          {{ COMPANY_NAME }}!</span
+                        >
+                      </p>
                     </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <!-- SEPARATOR -->
-  <!-- <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- SEPARATOR -->
+<!-- <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
     <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
       <tr>
         <td valign='top' align='center'>
@@ -46,41 +58,87 @@
       </tr>
     </table>
   </div> -->
-  <!-- MESSAGE CONTENT -->
-  <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative; background-color:blue">
-      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
-        <tr>
-          <td align='left'>
-            <div class="contentEditableContainer contentTextEditable">
-              <div class="contentEditable" align='center'>
-                <h1 class="font">{{EMPLOYER}}</h1>
-                <h1 class="font">Company ID: {{ID}}</h2>
-                <p>We are very excited to have you here {{ FIRST_NAME }}, please click on the following link to validate your email:</p>
-              </div>
-            </div>
-          </td>
-        </tr>
-        <tr><td height='55'></td></tr>
-        <tr>
-          <td align='center'>
-            <table>
-              <tr>
-                <td align='center' bgcolor='#27666F' style='background:#27666F; padding:15px 18px;-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;'>
-                    <a target='_blank' href='{{ LINK }}'>
 
-                  <div class="contentEditableContainer contentTextEditable">
-                    <div class="contentEditable" align='center'>
-                      <a target='_blank' href='{{ LINK }}' class='link2' style='color:#ffffff;'>Validate my email</a>
-                      <p style='color:#aee8b9;'><small>Be aware that this link will only be valid for 15 minutes</small></p>
-                    </div>
-                  </div>
+<!-- MESSAGE CONTENT -->
+<div
+  class="movableContent"
+  style="
+    border: 0px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    position: relative;
+    color: #ffffff;
+    background-color: #0f4f72;
+  "
+>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+    <tr>
+      <td align="left">
+        <div class="contentEditableContainer contentTextEditable">
+          <div class="contentEditable" align="center">
+            <h1 style="margin: 0px">{{EMPLOYER}}</h1>
+            <h2 style="margin: 0px">Company ID: {{ID}}</h2>
+            <h3 style="margin-top: 1.5rem; font-weight: lighter">
+              We are very excited to have you here {{ FIRST_NAME }}, please
+              click on the following link to validate your email:
+            </h3>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="height: 1.5rem"></td>
+    </tr>
+    <tr>
+      <td align="center">
+        <table>
+          <tr>
+            <td
+              align="center"
+              style="
+                background: #0c94a8;
+                padding: 1rem;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                border-radius: 4px;
+              "
+            >
+              <a
+                target="_blank"
+                href="{{ LINK }}"
+                style="text-decoration: none"
+              >
+                <div class="contentEditableContainer contentTextEditable">
+                  <div class="contentEditable" align="center">
+                    <a
+                      target="_blank"
+                      href="{{ LINK }}"
+                      class="link2"
+                      style="color: #ffffff; text-decoration: none"
+                    >
+                      <h3 style="margin: 0px">Validate my email</h3>
                     </a>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        <tr><td height='20'></td></tr>
-      </table>
-    </div>
+
+                    <h4
+                      style="
+                        margin: 0.75rem 0 0.75rem 0;
+                        font-weight: lighter;
+                        color: #ffffff;
+                      "
+                    >
+                      Be aware that this link will only be valid for 15 minutes
+                    </h4>
+                  </div>
+                </div>
+              </a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td style="height: 1.5rem"></td>
+    </tr>
+  </table>
+</div>
 {% endblock %}
