@@ -1,4 +1,4 @@
-## Job API Client
+# Job API Client
 
 [![buddy pipeline](https://app.buddy.works/jobcore/rest-api/pipelines/pipeline/132168/badge.svg?token=d248fd7fd9018672bfcfc67ebc25c73faf27f90b18b94d15856cdea170fb18be "buddy pipeline")](https://app.buddy.works/jobcore/rest-api/pipelines/pipeline/132168) <img src="./coverage.svg" alt="coverage svg">
 
